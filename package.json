@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "kick",
+  "name": "app-manager",
   "title": "Application Manager",
   "description": "Quickly view and quit running GUI applications with multi-selection support",
   "icon": "extension-icon.png",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "kick",
+      "name": "manage-running-apps",
       "title": "Manage Running Apps",
       "subtitle": "Application Manager",
       "description": "View and quit running GUI applications",

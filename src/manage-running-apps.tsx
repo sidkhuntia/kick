@@ -10,7 +10,7 @@ import {
   getApplications,
   Application,
 } from "@raycast/api";
-import { useCachedPromise } from "@raycast/utils";
+import { showFailureToast, useCachedPromise } from "@raycast/utils";
 import { execSync } from "child_process";
 import { useState } from "react";
 
@@ -194,10 +194,8 @@ export default function Command() {
 
   const quitSelectedApps = async () => {
     if (selected.size === 0) {
-      await showToast({
-        style: Toast.Style.Failure,
-        title: "No apps selected",
-        message: "Please select apps to quit first",
+      await showFailureToast("No apps selected", {
+        title: "Please select apps to quit first",
       });
       return;
     }

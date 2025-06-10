@@ -1,11 +1,11 @@
 # Agent Configuration
 
 ## Commands
-- **Build**: `npm run build` or `ray build`
-- **Dev**: `npm run dev` or `ray develop` 
-- **Lint**: `npm run lint` or `ray lint`
-- **Fix Lint**: `npm run fix-lint` or `ray lint --fix`
-- **Publish**: `npm run publish` (publishes to Raycast Store)
+- **Build**: `npm run build`
+- **Dev**: `npm run dev`
+- **Lint**: `npm run lint`
+- **Fix Lint**: `npm run fix-lint`
+- **Publish**: `npx @raycast/api@latest publish` (publishes to Raycast Store)
 
 ## Architecture
 - **Type**: Raycast extension for macOS application management
