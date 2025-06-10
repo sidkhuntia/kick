@@ -243,7 +243,6 @@ export default function Command() {
   if (isLoading) {
     return <List isLoading={true} searchBarPlaceholder="Loading applications..." />;
   }
-  const startTime2 = performance.now();
   if (apps.length === 0) {
     return (
       <List>
